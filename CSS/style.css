@@ -1,0 +1,2622 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+#root {
+    font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+}
+
+/* nav */
+header {
+    width: 100%;
+    height: 48px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background-color: transparent;
+}
+
+.contanier {
+    max-width: 1536px;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.logo {
+    width: 190px;
+    height: 48px;
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+.logo svg {
+    height: 16px;
+    display: block;
+    margin: 2px 0px 0px;
+    width: 16px;
+}
+
+.logo svg .microsoft-red {
+    fill: rgb(255, 255, 255);
+    transition: all 200ms linear 0ms;
+}
+
+.logo:hover svg .microsoft-red {
+    fill: rgb(242, 80, 34);
+}
+
+.logo svg .microsoft-green {
+    fill: rgb(255, 255, 255);
+    transition: all 200ms linear 0ms;
+}
+
+.logo:hover svg .microsoft-green {
+    fill: rgb(127, 186, 0);
+}
+
+.logo svg .microsoft-blue {
+    fill: rgb(255, 255, 255);
+    transition: all 200ms linear 0ms;
+}
+
+.logo:hover svg .microsoft-blue {
+    fill: rgb(0, 164, 239);
+}
+
+.logo svg .microsoft-yellow {
+    fill: rgb(255, 255, 255);
+    transition: all 200ms linear 0ms;
+}
+
+.logo:hover svg .microsoft-yellow {
+    fill: rgb(255, 185, 0);
+}
+
+
+.sitetitle {
+    height: 48px;
+    width: auto;
+    align-content: center;
+    flex: 0 0 auto;
+}
+
+.sitetitle h1 {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.sitetitle h1 a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 200ms linear 0ms;
+}
+
+.navigation {
+    height: 48px;
+    flex: 1 1 auto;
+    padding: 0px 120px 0px 420px;
+}
+
+.navigation ul {
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.navigation ul li {
+    width: auto;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 49px;
+    font-weight: 600;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navigation ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: all 200ms linear 0ms;
+}
+
+.mobilemenu {
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 48px;
+    left: 0px;
+    height: calc(100vh - 48px);
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: 10;
+    transform: translateY(20px);
+    transition: all 300ms ease 300ms;
+}
+
+
+ul {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.menulistitem {
+    transform: translateY(0px);
+    width: 100%;
+    font-size: 20px;
+    opacity: 1;
+    padding: 0px;
+    margin: 0px;
+    transition: all 300ms ease 0ms;
+}
+
+.menulistitem2 {
+    transform: translateY(0px);
+    width: 100%;
+    font-size: 20px;
+    opacity: 1;
+    padding: 0px;
+    margin: 0px;
+    transition: all 300ms ease 0ms;
+}
+
+.menulistitem3 {
+    transform: translateY(0px);
+    width: 100%;
+    font-size: 20px;
+    opacity: 1;
+    padding: 0px;
+    margin: 0px;
+    transition: all 300ms ease 0ms;
+}
+
+.menulistitem4 {
+    transform: translateY(0px);
+    width: 100%;
+    font-size: 20px;
+    opacity: 1;
+    padding: 0px;
+    margin: 0px;
+    transition: all 300ms ease 0ms;
+}
+
+
+
+ul li a {
+    color: rgb(255, 255, 255);
+    position: relative;
+    display: block;
+    text-decoration: none;
+    padding: 25px 30px;
+}
+
+/* nav */
+
+main {
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    margin: 48px 0px 0px;
+}
+
+/* top */
+.introduction {
+    width: 100%;
+    margin: 145px 0px 60px;
+}
+
+.intrmain {
+    display: flex;
+    width: 1536px;
+    margin: 0px auto;
+}
+
+.content {
+    width: 410px;
+}
+
+.content .title {
+    width: 100%;
+}
+
+.content .title h2 {
+    font-size: 64px;
+    line-height: 80px;
+    color: rgb(79, 229, 255);
+    font-weight: 600;
+    margin: 0px 0px 0px -6px;
+}
+
+.description {
+    width: 100%;
+    margin: 100px 0px 30px;
+}
+
+.descriptionmain {
+    width: 100%;
+    max-width: 352px;
+}
+
+.descriptionmain p {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    margin: 0px 0px 24px;
+}
+
+.media-sc {
+    text-align: center;
+    position: relative;
+    flex: 1 1 auto;
+}
+
+.media-sc .leftLine {
+    position: absolute;
+    top: -15px;
+    right: 180px;
+    pointer-events: none;
+}
+
+.media-sc .rightLine {
+    position: absolute;
+    bottom: 155px;
+    left: 180px;
+    pointer-events: none;
+}
+
+.media-sc .png {
+    width: 354px;
+    height: 603px;
+    position: relative;
+    left: 386px;
+    background-image: url('../img/icon-fluent@1x.png');
+    background-repeat: no-repeat;
+}
+
+/* top */
+
+.platforms {
+    width: 100%;
+    position: relative;
+}
+
+.platforms::before {
+    content: "";
+    width: 50vw;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    background-color: rgb(34, 128, 200);
+}
+
+.platforms .inner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1536px;
+    margin: 0px auto;
+}
+
+.platforms .inner .innermain {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+/* web */
+.innermain .web {
+    width: 25%;
+    height: 384px;
+    position: relative;
+    z-index: 2;
+}
+
+.innermain .web .webmain {
+    background-color: rgb(37, 142, 222);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.innermain .web .webmain .icon {
+    min-height: 96px;
+    width: 100%;
+    text-align: left;
+    flex: 1 1 auto;
+    padding: 26px;
+}
+
+.webmain .icon img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.webmain .content {
+    height: 100px;
+    width: 100%;
+    flex: 0 0 auto;
+    padding: 0px 26px;
+}
+
+.webmain .content h2 {
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    letter-spacing: -0.03rem;
+    line-height: 40px;
+    font-weight: 600;
+    margin: 0px 0px 26px;
+}
+
+.webmain .content p {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.webmain .action {
+    height: 48px;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex: 0 0 auto;
+    padding: 0px 26px 10px;
+}
+
+.webmain .action img {
+    margin: 0px 16px 0px 0px;
+}
+
+.webmain .action span {
+    font-size: 16px;
+    font-family: "Segoe UI Mono", mono;
+    letter-spacing: 0.01rem;
+    color: rgb(0, 0, 0);
+}
+
+/* web */
+
+/* windows */
+.windows {
+    width: 25%;
+    height: 384px;
+    position: relative;
+    z-index: 2;
+}
+
+.windows_main {
+    background-color: rgb(79, 229, 255);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.windows_main .icon {
+    min-height: 96px;
+    width: 100%;
+    text-align: left;
+    flex: 1 1 auto;
+    padding: 26px;
+}
+
+.windows_main .icon img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.windows_main .content {
+    height: 100px;
+    width: 100%;
+    flex: 0 0 auto;
+    padding: 0px 26px;
+}
+
+.windows_main .content h2 {
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    letter-spacing: -0.03rem;
+    line-height: 40px;
+    font-weight: 600;
+    margin: 0px 0px 26px;
+}
+
+.windows_main .content p {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.windows_main .action {
+    height: 48px;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex: 0 0 auto;
+    padding: 0px 26px 10px;
+}
+
+.windows_main .action img {
+    margin: 0px 16px 0px 0px;
+}
+
+.windows_main .action span {
+    font-size: 16px;
+    font-family: "Segoe UI Mono", mono;
+    letter-spacing: 0.01rem;
+    color: rgb(0, 0, 0);
+}
+
+/* iOS */
+.iOS {
+    width: 25%;
+    height: 384px;
+    position: relative;
+    z-index: 2;
+}
+
+.iOSmain {
+    background-color: rgb(207, 143, 255);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.iOSmain .icon {
+    min-height: 96px;
+    width: 100%;
+    text-align: left;
+    flex: 1 1 auto;
+    padding: 26px;
+}
+
+.iOSmain img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.iOSmain .content {
+    height: 100px;
+    width: 100%;
+    flex: 0 0 auto;
+    padding: 0px 26px;
+}
+
+.iOSmain .content h2 {
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    letter-spacing: -0.03rem;
+    line-height: 40px;
+    font-weight: 600;
+    margin: 0px 0px 26px;
+}
+
+.iOSmain .content p {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.iOSmain .action {
+    height: 48px;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex: 0 0 auto;
+    padding: 0px 26px 10px;
+}
+
+.iOSmain .action img {
+    margin: 0px 16px 0px 0px;
+}
+
+.iOSmain .action span {
+    font-size: 16px;
+    font-family: "Segoe UI Mono", mono;
+    letter-spacing: 0.01rem;
+    color: rgb(0, 0, 0);
+}
+
+/* iOS */
+
+/* android */
+.android {
+    width: 25%;
+    height: 384px;
+    position: relative;
+    z-index: 2;
+}
+
+.androidmain {
+    background-color: rgb(105, 229, 110);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.androidmain .icon {
+    min-height: 96px;
+    width: 100%;
+    text-align: left;
+    flex: 1 1 auto;
+    padding: 26px;
+}
+
+.androidmain .icon img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.androidmain .content {
+    height: 100px;
+    width: 100%;
+    flex: 0 0 auto;
+    padding: 0px 26px;
+}
+
+.androidmain .content h2 {
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    letter-spacing: -0.03rem;
+    line-height: 40px;
+    font-weight: 600;
+    margin: 0px 0px 26px;
+}
+
+.androidmain .content p {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.androidmain .action {
+    height: 48px;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex: 0 0 auto;
+    padding: 0px 26px 10px;
+}
+
+.androidmain .action img {
+    margin: 0px 16px 0px 0px;
+}
+
+.androidmain .action span {
+    font-size: 16px;
+    font-family: "Segoe UI Mono", mono;
+    letter-spacing: 0.01rem;
+    color: rgb(0, 0, 0);
+}
+
+.platforms::after {
+    content: "";
+    width: 50vw;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+    background-color: rgb(95, 207, 99);
+}
+
+/* android */
+
+/* everydevice */
+.everydevice {
+    width: 100%;
+    min-height: 768px;
+    background: url('../img/msft-verge-fluent.jpg') 50% center / cover no-repeat fixed rgb(204, 204, 204);
+}
+
+.everydeviceinner {
+    width: 1536px;
+    margin: 0px auto;
+}
+
+.everydeviceinner .title {
+    width: 100%;
+    opacity: 1;
+    transform: translateY(20px);
+    padding: 10px 20px 0px;
+    transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+}
+
+.everydeviceinner .title h2 {
+    color: rgb(0, 0, 0);
+    font-size: 128px;
+    line-height: 150px;
+    font-weight: 600;
+    margin: 0px;
+    padding: 0px;
+    border-spacing: 0px;
+}
+
+.everydeviceinner .content {
+    width: 100%;
+    opacity: 1;
+    transform: translateY(20px);
+    margin: 60px 0px 0px;
+    transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+}
+
+.everydeviceinner .contentblock {
+    width: 100%;
+    max-width: 384px;
+    padding: 0px 16px 0px 24px;
+}
+
+.everydeviceinner .contentblock p {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+/* everydevice */
+
+/* terrafromsphere */
+.terrafromsphere {
+    width: 100%;
+    background-color: rgb(25, 25, 25);
+}
+
+.terrafromsphere .inner {
+    position: relative;
+    width: 1536px;
+    margin: 0px auto;
+}
+
+.terrafromsphere .inner .rect {
+    position: absolute;
+    top: -200px;
+    right: 130px;
+    pointer-events: none;
+    z-index: 4;
+    transform: translateY(0px);
+    opacity: 1;
+    transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+}
+
+.terrafromsphere .inner .line {
+    position: absolute;
+    top: 570px;
+    left: 190px;
+    pointer-events: none;
+    transform: translateY(400px);
+    transition: transform 600ms linear 0ms;
+}
+
+.terrafromsphere .inner .sphere {
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 100px 100px 50px;
+}
+
+.terrafromsphere .inner .sphere img {
+    max-width: 100%;
+}
+
+/* terrafromsphere */
+
+/* terrafromdescription */
+.terrafromdescription {
+    width: 100%;
+    background-color: rgb(25, 25, 25);
+}
+
+.terrafromdescription .inner {
+    position: relative;
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    width: 1536px;
+    margin: 0px auto;
+}
+
+.terrafromdescription .inner .content {
+    width: 384px;
+    margin: 0px 0px 50px;
+    padding: 0px 16px;
+}
+
+.terrafromdescription .inner .content p {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+/* terrafromdescription */
+
+/* terrafrompowerful */
+.terrafrompowerful {
+    width: 100%;
+    position: relative;
+    background-color: rgb(25, 25, 25);
+}
+
+.terrafrompowerful .title {
+    position: absolute;
+    bottom: 80px;
+    left: 0px;
+    width: 100%;
+    z-index: 4;
+}
+
+.terrafrompowerful .title .inner {
+    width: 1536px;
+    margin: 0px auto;
+}
+
+.terrafrompowerful .title .inner h2 {
+    color: rgb(25, 25, 25);
+    font-size: 128px;
+    line-height: 144px;
+    font-weight: 600;
+    margin: 0px 0px 0px 26px;
+}
+
+.terrafrompowerful .media1 {
+    overflow-y: hidden;
+}
+
+.terrafrompowerful .media1 .media-sc {
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.terrafrompowerful .media1 .media-sc img {
+    width: 100%;
+    min-width: 2000px;
+    position: relative;
+    align-self: center;
+}
+
+/* terrafrompowerful */
+
+/* .stylecloud */
+.stylecloud {
+    position: relative;
+    top: 0px;
+    z-index: 2;
+    width: 100%;
+    min-height: 948px;
+    background: url(https://www.microsoft.com/design/fluent/assets/images/clouds.jpg) 50% center / cover no-repeat fixed rgb(0, 0, 0);
+}
+
+.stylecloud .inner {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 1536px;
+    margin: 0px auto;
+}
+
+.stylecloud .inner .planes {
+    position: absolute;
+    top: -240px;
+    right: -260px;
+    width: 768px;
+}
+
+.stylecloud .inner .planes .SolidPlane {
+    position: absolute;
+    top: -120px;
+    left: 2px;
+    z-index: 2;
+    opacity: 1;
+    transform: translate3d(0px, -29.5905px, 0px);
+}
+
+.stylecloud .inner .planes .OutlinePlane {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.stylecloud .inner .DeHeader {
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    font-size: 395px;
+    line-height: 1;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.stylecloud .inner .SignHeader {
+    position: absolute;
+    top: 140px;
+    right: -30px;
+    font-size: 395px;
+    line-height: 1;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.stylecloud .inner .line {
+    position: absolute;
+    top: 550px;
+    left: 370px;
+    pointer-events: none;
+    transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+}
+
+/* .stylecloud */
+
+/* StyledEngagingImmersive */
+.StyledEngagingImmersive {
+    width: 100%;
+    background-color: rgb(204, 204, 204);
+    min-height: 820px;
+    position: relative;
+}
+
+.StyledEngagingImmersive .inner {
+    width: 1536px;
+    position: relative;
+    margin: 0px auto;
+}
+
+.StyledEngagingImmersive .inner .title {
+    width: 100%;
+    padding: 140px 40px 0px 8px;
+}
+
+.StyledEngagingImmersive .inner .title h2 {
+    color: rgb(0, 0, 0);
+    font-size: 128px;
+    line-height: 150px;
+    font-weight: 600;
+    margin: 0px;
+    padding: 0px;
+    border-spacing: 0px;
+}
+
+.StyledEngagingImmersive .inner .content {
+    width: 100%;
+    margin: 60px 0px 0px;
+}
+
+.StyledEngagingImmersive .inner .content .ContentBlock {
+    width: 100%;
+    max-width: 384px;
+    padding: 0px 16px;
+}
+
+.StyledEngagingImmersive .inner .content .ContentBlock p {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.StyledEngagingImmersive .media-sc {
+    position: absolute;
+    top: 200px;
+    right: 0px;
+}
+
+.StyledEngagingImmersive .media-sc img {
+    max-width: 900px;
+}
+
+/* StyledEngagingImmersive */
+
+/* StyledSpace */
+.StyledSpace {
+    width: 100%;
+    min-height: 768px;
+    background: url(https://www.microsoft.com/design/fluent/assets/images/space.jpg) 50% center / cover no-repeat fixed rgb(0, 0, 0);
+}
+
+.StyledSpace .inner {
+    position: relative;
+    z-index: 2;
+    width: 1536px;
+    margin: 0px auto;
+}
+
+.StyledSpace .inner .fluent {
+    position: absolute;
+    top: -95px;
+    left: 340px;
+    pointer-events: none;
+    transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+}
+
+.StyledSpace .inner .line {
+    position: absolute;
+    top: 185px;
+    left: 165px;
+    pointer-events: none;
+    transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+}
+
+.StyledSpace .inner .WhiteRect {
+    position: absolute;
+    top: -125px;
+    left: 620px;
+    pointer-events: none;
+    transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+}
+
+.StyledSpace .inner .WhitePlane {
+    position: absolute;
+    top: 530px;
+    right: 85px;
+    pointer-events: none;
+    transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+}
+
+.StyledSpace .inner .LilacRect {
+    position: absolute;
+    top: 370px;
+    right: 220px;
+    pointer-events: none;
+    transform: translateY(-100px);
+    transition: opacity 600ms linear 0ms, transform 600ms linear 0ms;
+}
+
+/* StyledSpace */
+
+/* StyledMedia */
+.StyledMedia {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin: 0px 0px 160px;
+}
+
+.StyledMedia .inner {
+    position: relative;
+    z-index: 2;
+    width: 1536px;
+    margin: 0px auto;
+}
+
+.StyledMedia .inner .Grid {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+/* ----------------------------------------------------------- */
+.StyledMedia .inner .Grid .how {
+    width: 25%;
+    height: 384px;
+    position: relative;
+    z-index: 2;
+    background-color: rgb(0, 0, 0);
+}
+
+.StyledMedia .inner .Grid .how:hover {
+    background-color: white;
+    transition: 0.5s;
+}
+
+.StyledMedia .inner .Grid .how:hover a .content p {
+    color: black;
+}
+
+.StyledMedia .inner .Grid .how:hover a .source .icon svg path {
+    fill: black;
+}
+
+.StyledMedia .inner .Grid .how:hover a .source .title label {
+    color: black;
+}
+
+.StyledMedia .inner .Grid .how a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    transition: background-color 200ms linear 0ms;
+}
+
+.StyledMedia .inner .Grid .how a .content {
+    width: 100%;
+    padding: 16px;
+    flex: 1 1 auto;
+    margin: 2px 0px 0px;
+}
+
+.StyledMedia .inner .Grid .how a .content p {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    transition: color 200ms linear 0ms;
+}
+
+.StyledMedia .inner .Grid .how a .source {
+    width: 100%;
+    display: flex;
+    padding: 16px;
+    flex: 0 0 auto;
+}
+
+.StyledMedia .inner .Grid .how a .source .icon {
+    width: 24px;
+    flex: 0 0 auto;
+    margin: 0px 16px 0px 0px;
+}
+
+.StyledMedia .inner .Grid .how a .source .icon svg {
+    max-width: 20px;
+    height: auto;
+}
+
+.StyledMedia .inner .Grid .how a .source .icon svg path {
+    fill: rgb(255, 255, 255);
+    transition: fill 200ms linear 0ms;
+}
+
+.StyledMedia .inner .Grid .how a .source .title {
+    -webkit-box-align: center;
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+.StyledMedia .inner .Grid .how a .source .title label {
+    color: rgb(255, 255, 255);
+    transition: color 200ms linear 0ms;
+}
+
+/* ----------------------------------------------------------- */
+.StyledMedia .inner .Grid .evo {
+    width: 25%;
+    height: 384px;
+    position: relative;
+    z-index: 2;
+    background-color: rgb(57, 57, 57);
+}
+
+.StyledMedia .inner .Grid .evo:hover {
+    background-color: white;
+    transition: 0.5s;
+}
+
+.StyledMedia .inner .Grid .evo:hover a .content p {
+    color: black;
+}
+
+.StyledMedia .inner .Grid .evo:hover a .source .icon svg path {
+    fill: black;
+}
+
+.StyledMedia .inner .Grid .evo:hover a .source .title label {
+    color: black;
+}
+
+.StyledMedia .inner .Grid .evo a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    transition: background-color 200ms linear 0ms;
+}
+
+.StyledMedia .inner .Grid .evo a .content {
+    width: 100%;
+    padding: 16px;
+    flex: 1 1 auto;
+    margin: 2px 0px 0px;
+}
+
+.StyledMedia .inner .Grid .evo a .content p {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    transition: color 200ms linear 0ms;
+}
+
+.StyledMedia .inner .Grid .evo a .source {
+    width: 100%;
+    display: flex;
+    padding: 16px;
+    flex: 0 0 auto;
+}
+
+.StyledMedia .inner .Grid .evo a .source .icon {
+    width: 24px;
+    flex: 0 0 auto;
+    margin: 0px 16px 0px 0px;
+}
+
+.StyledMedia .inner .Grid .evo a .source .icon svg {
+    max-width: 20px;
+    height: auto;
+}
+
+.StyledMedia .inner .Grid .evo a .source .icon svg path {
+    fill: rgb(255, 255, 255);
+    transition: fill 200ms linear 0ms;
+}
+
+.StyledMedia .inner .Grid .evo a .source .title {
+    -webkit-box-align: center;
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+.StyledMedia .inner .Grid .evo a .source .title label {
+    color: rgb(255, 255, 255);
+    transition: color 200ms linear 0ms;
+}
+
+/* ----------------------------------------------------------- */
+.StyledMedia .inner .Grid .scale {
+    width: 25%;
+    height: 384px;
+    position: relative;
+    z-index: 2;
+    background-color: rgb(118, 118, 118);
+}
+
+.StyledMedia .inner .Grid .scale:hover {
+    background-color: white;
+    transition: 0.5s;
+}
+
+.StyledMedia .inner .Grid .scale a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    transition: background-color 200ms linear 0ms;
+}
+
+.StyledMedia .inner .Grid .scale a .content {
+    width: 100%;
+    padding: 16px;
+    flex: 1 1 auto;
+    margin: 2px 0px 0px;
+}
+
+.StyledMedia .inner .Grid .scale a .content p {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    transition: color 200ms linear 0ms;
+}
+
+.StyledMedia .inner .Grid .scale a .source {
+    width: 100%;
+    display: flex;
+    padding: 16px;
+    flex: 0 0 auto;
+}
+
+.StyledMedia .inner .Grid .scale a .source .icon {
+    width: 24px;
+    flex: 0 0 auto;
+    margin: 0px 16px 0px 0px;
+}
+
+.StyledMedia .inner .Grid .scale a .source .icon svg {
+    max-width: 20px;
+    height: auto;
+}
+
+.StyledMedia .inner .Grid .scale a .source .icon svg path {
+    fill: rgb(255, 255, 255);
+    transition: fill 200ms linear 0ms;
+}
+
+.StyledMedia .inner .Grid .scale a .source .title {
+    -webkit-box-align: center;
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+.StyledMedia .inner .Grid .scale a .source .title label {
+    color: rgb(255, 255, 255);
+    transition: color 200ms linear 0ms;
+}
+
+/* ----------------------------------------------------------- */
+.StyledMedia .inner .Grid .power {
+    width: 25%;
+    height: 384px;
+    position: relative;
+    z-index: 2;
+    background-color: rgb(204, 204, 204);
+}
+
+.StyledMedia .inner .Grid .power:hover {
+    background-color: white;
+    transition: 0.5s;
+}
+
+.StyledMedia .inner .Grid .power a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    transition: background-color 200ms linear 0ms;
+}
+
+.StyledMedia .inner .Grid .power a .content {
+    width: 100%;
+    padding: 16px;
+    flex: 1 1 auto;
+    margin: 2px 0px 0px;
+}
+
+.StyledMedia .inner .Grid .power a .content p {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    transition: color 200ms linear 0ms;
+}
+
+.StyledMedia .inner .Grid .power a .source {
+    width: 100%;
+    display: flex;
+    padding: 16px;
+    flex: 0 0 auto;
+}
+
+.StyledMedia .inner .Grid .power a .source .icon {
+    width: 24px;
+    flex: 0 0 auto;
+    margin: 0px 16px 0px 0px;
+}
+
+.StyledMedia .inner .Grid .power a .source .icon svg {
+    max-width: 20px;
+    height: auto;
+}
+
+.StyledMedia .inner .Grid .power a .source .icon svg path {
+    fill: rgb(255, 255, 255);
+    transition: fill 200ms linear 0ms;
+}
+
+.StyledMedia .inner .Grid .power a .source .title {
+    -webkit-box-align: center;
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+.StyledMedia .inner .Grid .power a .source .title label {
+    color: rgb(255, 255, 255);
+    transition: color 200ms linear 0ms;
+}
+
+/* StyledMedia */
+
+/* StyledNews */
+.StyledNews {
+    width: 100%;
+}
+
+.StyledNews .inner {
+    width: 1336px;
+    margin: 0px auto;
+}
+
+.StyledNews .inner .newslist {
+    width: 100%;
+}
+
+.StyledNews .inner .newslist .newsitem {
+    width: 100%;
+    display: flex;
+    padding: 0px 0px 200px;
+}
+
+.StyledNews .inner .newslist .newsitem .title {
+    width: 575px;
+    flex: 0 0 auto;
+}
+
+.StyledNews .inner .newslist .newsitem .title h2 {
+    font-size: 32px;
+    line-height: 40px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    padding: 0px 0px 0px 16px;
+}
+
+.StyledNews .inner .newslist .newsitem .content {
+    width: 50%;
+    padding: 0px 16px 35px;
+}
+
+.StyledNews .inner .newslist .newsitem .content .text {
+    width: 100%;
+}
+
+.StyledNews .inner .newslist .newsitem .content .text p {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.StyledNews .inner .newslist .newsitem .content .action {
+    width: 100%;
+    margin: 70px 0px 0px;
+}
+
+.StyledNews .inner .newslist .newsitem .content .action a {
+    display: flex;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.StyledNews .inner .newslist .newsitem .content .action:hover {
+    filter: opacity(55%)
+}
+
+.StyledNews .inner .newslist .newsitem .content .action a img {
+    margin: 0px 16px 0px 0px;
+}
+
+.StyledNews .inner .newslist .newsitem .content .action a span {
+    font-size: 16px;
+    font-family: "Segoe UI Mono", mono;
+    letter-spacing: 0.01rem;
+    line-height: 1;
+}
+
+@media (max-width:6770px) {
+    .terrafromsphere .sphere {
+        padding: 60px 30px;
+    }
+}
+
+@media (max-width: 1940px) {
+    .StyledEngagingImmersive .media-sc img {
+        max-width: 900px;
+    }
+}
+
+
+@media (max-width:1680px) {
+    .body {
+        height: 100%;
+        display: block;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .contanier {
+        display: flex;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        width: 1536px;
+        margin: 0px auto;
+    }
+
+    .StyledNews {
+        width: 100%;
+    }
+
+    .terrafromsphere .inner .rect {
+        right: 30px;
+    }
+
+    .stylecloud .inner .DeHeader {
+        font-size: 295px;
+    }
+
+    .stylecloud .inner .SignHeader {
+        top: 120px;
+        right: -30px;
+        font-size: 295px;
+    }
+
+    .StyledEngagingImmersive .media-sc img {
+        max-width: 50vw;
+        position: relative;
+        top: 4px;
+    }
+
+    .StyledSpace .inner {
+        width: 1336px;
+    }
+
+    .StyledMedia .inner {
+        width: 1336px;
+    }
+
+    .StyledMedia .inner {
+        width: 1336px;
+    }
+
+    .StyledNews .inner {
+        width: 1336px;
+    }
+
+    .StyledNews .inner .newslist .newsitem .content {
+        width: 50%;
+        padding: 0px 16px 35px;
+    }
+}
+
+@media (max-width:1460px) {
+
+    /* header */
+    .contanier {
+        width: 1136px;
+    }
+
+    .contanier .logo {
+        width: 190px;
+        height: 48px;
+        display: flex;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        align-items: center;
+        flex: 0 0 auto;
+    }
+
+    .contanier .navigation {
+        padding: 0px 60px 0px 120px;
+    }
+
+    /* header */
+
+    /* introduction */
+    .introduction .intrmain {
+        width: 1136px;
+    }
+
+    .descriptionmain {
+        max-width: 384px;
+    }
+
+
+    .intrmain .media-sc .leftLine {
+        top: 15px;
+        right: 36px;
+    }
+
+    .intrmain .media-sc .rightLine {
+        bottom: 116px;
+        left: 30px;
+    }
+
+    .intrmain .media-sc .png {
+        left: 186px;
+    }
+
+    /* introduction */
+
+    /* .platforms */
+    .platforms .inner {
+        width: 1136px;
+    }
+
+    .platforms .inner .web .webmain .icon {
+        min-height: 96px;
+        width: 100%;
+        text-align: left;
+        flex: 1 1 auto;
+        padding: 26px;
+    }
+
+    .platforms .inner .web .webmain .content {
+        height: 180px;
+    }
+
+    .platforms .inner .windows .windows_main .content {
+        height: 180px;
+    }
+
+    .platforms .inner .iOS .iOSmain .content {
+        height: 180px;
+    }
+
+    .platforms .inner .android .androidmain .content {
+        height: 180px;
+    }
+
+    /* .platforms */
+
+    /* everydevice */
+    .everydeviceinner {
+        width: 1136px;
+    }
+
+    .everydeviceinner .title {
+        position: relative;
+        bottom: 20px;
+        padding: 10px 0px 0px 16px;
+    }
+
+    .everydeviceinner .title .Heading {
+        font-size: 96px;
+        line-height: 120px;
+    }
+
+    .everydeviceinner .content {
+        position: relative;
+        bottom: 20px;
+        margin: 40px 0px 0px;
+    }
+
+    .everydeviceinner .content .contentblock {
+        width: 100%;
+        max-width: 384px;
+        padding: 0px 16px 0px 24px;
+    }
+
+    /* everydevice */
+
+    /* terrafromsphere */
+    .terrafromsphere .inner {
+        width: 1136px;
+    }
+
+    .terrafromsphere .inner .rect {
+        top: -202px;
+    }
+
+    .terrafromsphere .inner .sphere {
+        padding: 58px 100px 50px;
+    }
+
+    /* terrafromsphere */
+
+    /* terrafromdescription */
+    .terrafromdescription .inner {
+        width: 1136px;
+    }
+
+    .terrafromdescription .inner .content {
+        padding: 9px 16px;
+    }
+
+    /* terrafromdescription */
+
+    /* terrafrompowerful */
+    .terrafrompowerful .title .inner {
+        width: 1136px;
+    }
+
+    .terrafrompowerful .title .inner h2 {
+        font-size: 96px;
+        line-height: 128px;
+        margin: 0px 0px 8px 26px;
+    }
+
+    /* terrafrompowerful */
+
+    /* stylecloud */
+    .stylecloud .inner .planes {
+        display: none;
+    }
+
+    .stylecloud .inner .DeHeader {
+        top: -20px;
+        left: 150px;
+    }
+
+    .stylecloud .inner .SignHeader {
+        top: 187px;
+        right: 218px;
+    }
+
+    .stylecloud .inner .line {
+        top: 571px;
+        left: 521px;
+    }
+
+    /* stylecloud */
+
+    /* StyledEngagingImmersive */
+    .StyledEngagingImmersive .inner {
+        width: 1136px;
+    }
+
+    .StyledEngagingImmersive .inner .title {
+        padding: 64px 40px 0px 8px;
+    }
+
+
+    .StyledEngagingImmersive .media-sc .img {
+        max-width: 900px;
+    }
+
+    /* StyledEngagingImmersive */
+
+
+    /* StyledSpace */
+    .StyledSpace .inner {
+        width: 1136px;
+    }
+
+    .StyledSpace .inner .fluent {
+        top: -72px;
+        left: 50%;
+        margin: 0px 0px 0px -215px;
+    }
+
+    .StyledSpace .inner .line {
+        top: 40vh;
+        left: 65px;
+    }
+
+    .StyledSpace .inner .WhiteRect {
+        top: 80px;
+        left: auto;
+        right: 60px;
+    }
+
+    .StyledSpace .inner .LilacRect {
+        top: 470px;
+        right: 220px;
+    }
+
+    /* StyledSpace */
+
+    /* StyledMedia */
+    .StyledMedia .inner {
+        width: 1136px;
+    }
+
+    .StyledMedia {
+        position: relative;
+        z-index: 1;
+    }
+
+    .StyledMedia .inner {
+        width: 1136px;
+    }
+
+    .StyledMedia .inner .Grid .how a .content p {
+        margin: 0px;
+    }
+
+    .StyledMedia .inner .Grid .evo a .content p {
+        margin: 0px;
+    }
+
+    .StyledMedia .inner .Grid .scale a .content p {
+        margin: 0px;
+    }
+
+    .StyledMedia .inner .Grid .power a .content p {
+        margin: 0px;
+    }
+
+    .StyledMedia .inner .Grid .scale a .source .icon svg path {
+        fill: black;
+    }
+
+    .StyledMedia .inner .Grid .scale a .source .title label {
+        color: black;
+    }
+
+    .StyledMedia .inner .Grid .power a .source .icon svg path {
+        fill: black;
+    }
+
+    .StyledMedia .inner .Grid .power a .source .title label {
+        color: black;
+    }
+
+    /* StyledMedia */
+
+    /* StyledNews */
+    .StyledNews .inner {
+        width: 1136px;
+    }
+
+    .StyledNews .inner .newslist .newsitem .title {
+        width: 50%;
+        position: relative;
+        bottom: 28px;
+    }
+
+    .StyledNews .inner .newslist .newsitem .content {
+        width: 50%;
+        padding: 0px 16px 35px;
+        position: relative;
+        bottom: 17px;
+    }
+
+    /* StyledNews */
+
+
+
+
+    @media (max-width:1280px) {
+        .contanier {
+            width: 960px;
+        }
+
+        .introduction .intrmain {
+            width: 960px;
+        }
+
+        .intrmain .media-sc .leftLine {
+            display: none;
+        }
+
+        .intrmain .media-sc .rightLine {
+            display: none;
+        }
+
+        .intrmain .media-sc .png {
+            left: 133px;
+        }
+
+
+        .platforms .inner {
+            width: 960px;
+        }
+
+        .everydeviceinner {
+            width: 960px;
+        }
+
+        .everydeviceinner .title {
+            padding: 24px 0px 60px;
+        }
+
+        .everydeviceinner .content {
+            margin: 0px;
+        }
+
+        .everydeviceinner .content .contentblock {
+            margin: 0px;
+            padding: 0px 5px;
+        }
+
+        .everydevice {
+            min-height: 668px;
+        }
+
+        .stylecloud {
+            min-height: 668px;
+        }
+
+        .stylecloud .inner {
+            width: 960px;
+        }
+
+        .stylecloud .inner .DeHeader {
+            font-size: 228px;
+            top: 40px;
+            left: 14px;
+        }
+
+        .stylecloud .inner .SignHeader {
+            font-size: 228px;
+            top: 224px;
+            right: 10px;
+        }
+
+        .stylecloud .inner .line {
+            display: none;
+        }
+
+        .StyledEngagingImmersive {
+            min-height: 668px;
+        }
+
+        .terrafromsphere .inner {
+            width: 960px;
+        }
+
+        .terrafromdescription .inner {
+            width: 960px;
+        }
+
+        .terrafrompowerful .title .inner {
+            width: 960px;
+        }
+
+        .terrafrompowerful .title .inner h2 {
+            font-size: 96px;
+            line-height: 104px;
+        }
+
+        .StyledEngagingImmersive .inner {
+            width: 960px;
+        }
+
+        .StyledEngagingImmersive .inner .title {
+            padding: 37px 0px 0px;
+        }
+
+        .StyledEngagingImmersive .inner .title h2 {
+            font-size: 96px;
+            line-height: 104px;
+        }
+
+        .StyledEngagingImmersive .media-sc img {
+            top: 8px;
+        }
+
+        .StyledSpace {
+            min-height: 668px;
+        }
+
+        .StyledSpace .inner {
+            width: 960px;
+        }
+
+        .StyledMedia .inner {
+            width: 960px;
+        }
+
+        .StyledMedia .inner .Grid .how a .content p {
+            font-size: 28px;
+        }
+
+        .StyledMedia .inner .Grid .evo a .content p {
+            font-size: 28px;
+        }
+
+        .StyledMedia .inner .Grid .scale a .content p {
+            font-size: 28px;
+        }
+
+        .StyledMedia .inner .Grid .power a .content p {
+            font-size: 28px;
+        }
+
+        .StyledNews .inner {
+            width: 960px;
+        }
+
+        .webmain .action {
+            padding: 0px 30px;
+        }
+
+        .windows_main .action {
+            padding: 0px 30px;
+        }
+
+        .iOSmain .action {
+            padding: 0px 30px;
+        }
+
+        .androidmain .action {
+            padding: 0px 30px;
+        }
+
+    }
+
+    @media (max-width:1024px) {
+
+        /* header */
+        .contanier {
+            width: 100%;
+            padding: 0px 30px;
+        }
+
+        .contanier .logo {
+            width: 60px;
+        }
+
+        .sitetitle {
+            position: relative;
+            top: 1px;
+        }
+
+        .contanier .navigation {
+            padding: 0px 0px 0px 120px;
+        }
+
+
+
+        /* main */
+        .introduction {
+            width: 100%;
+            margin: 145px 0px 60px;
+        }
+
+        .intrmain {
+            width: 100%;
+            padding: 0px 30px;
+            margin: 0px;
+        }
+
+        .content {
+            width: 60%
+        }
+
+
+        .description {
+            margin: 100px 0px 30px
+        }
+
+        .intrmain .media-sc .png {
+            width: 354px;
+            height: 603px;
+            left: 6px;
+        }
+
+        .media-sc .png {
+            width: 252px;
+            height: 430px;
+            background-size: 100%;
+            position: relative;
+            left: 0px;
+        }
+
+
+        .StyledMedia {
+            margin: 0px 0px 60px;
+        }
+
+        .StyledMedia .inner {
+            width: 100%;
+        }
+
+        .StyledMedia .inner .Grid {
+            flex-wrap: wrap;
+        }
+
+        .StyledMedia .inner .Grid .how {
+            width: 50%;
+        }
+
+        .StyledMedia .inner .Grid .evo {
+            width: 50%;
+        }
+
+        .StyledMedia .inner .Grid .scale {
+            width: 50%;
+        }
+
+        .StyledMedia .inner .Grid .power {
+            width: 50%;
+        }
+
+        .StyledMedia .inner .Grid .how a .content {
+            padding: 19px 28px;
+        }
+
+        .StyledMedia .inner .Grid .how a .source {
+            padding: 0px 30px 30px;
+        }
+
+        .StyledMedia .inner .Grid .evo a .content {
+            padding: 19px 28px;
+        }
+
+        .StyledMedia .inner .Grid .evo a .source {
+            padding: 0px 30px 30px;
+        }
+
+        .StyledMedia .inner .Grid .scale a .content {
+            padding: 19px 28px;
+        }
+
+        .StyledMedia .inner .Grid .scale a .source {
+            padding: 0px 30px 30px;
+        }
+
+        .StyledMedia .inner .Grid .power a .content {
+            padding: 19px 28px;
+        }
+
+        .StyledMedia .inner .Grid .power a .source {
+            padding: 0px 30px 30px;
+        }
+
+        .StyledNews .inner {
+            width: 100%;
+        }
+
+        .StyledNews .inner .newslist .newsitem .title {
+            margin: 0px 30px 30px;
+        }
+
+        .StyledNews .inner .newslist .newsitem .title h2 {
+            padding: 0px;
+        }
+
+        .StyledNews .inner .newslist .newsitem .content {
+            padding: 0px 60px 35px;
+            right: 25px;
+        }
+
+        .intrmain {
+            width: 100%;
+            padding: 30px;
+        }
+
+        /* .platforms */
+
+        .platforms .inner {
+            width: 100%;
+            padding: 0px;
+        }
+
+        .platforms .inner .innermain {
+            flex-wrap: wrap;
+        }
+
+        /* web */
+        .innermain .web {
+            width: 50%;
+            height: 320px;
+        }
+
+        .platforms .inner .web .webmain .icon {
+            padding: 30px 30px 16px;
+        }
+
+        .innermain .web .webmain .icon img {
+            max-width: 66px;
+            max-height: 66px;
+        }
+
+        .platforms .inner .web .webmain .content {
+            height: auto;
+            padding: 0px 30px;
+        }
+
+        /* windows */
+        .innermain .windows {
+            width: 50%;
+            height: 320px;
+        }
+
+        .platforms .inner .windows .windows_main .icon {
+            padding: 30px 30px 16px;
+        }
+
+        .innermain .windows .windows_main .icon img {
+            max-width: 66px;
+            max-height: 68px;
+        }
+
+        .platforms .inner .windows .windows_main .content {
+            height: auto;
+            padding: 0px 30px;
+        }
+
+        /* iOS */
+        .innermain .iOS {
+            width: 50%;
+            height: 320px;
+        }
+
+        .platforms .inner .iOS .iOSmain .icon {
+            padding: 30px 30px 16px;
+        }
+
+        .innermain .iOS .iOSmain .icon img {
+            max-width: 66px;
+            max-height: 66px;
+        }
+
+        .platforms .inner .iOS .iOSmain .content {
+            height: auto;
+            padding: 0px 30px;
+        }
+
+        /* android */
+        .innermain .android {
+            width: 50%;
+            height: 320px;
+        }
+
+        .platforms .inner .android .androidmain .icon {
+            padding: 30px 30px 16px;
+        }
+
+        .innermain .android .androidmain .icon img {
+            max-width: 66px;
+            max-height: 66px;
+        }
+
+        .platforms .inner .android .androidmain .content {
+            height: auto;
+            padding: 0px 30px;
+        }
+
+        .everydeviceinner .title {
+            padding: 29px 0px 40px;
+        }
+
+        .everydeviceinner .title .Heading {
+            font-size: 86px;
+            line-height: 90px;
+            margin: 0px;
+        }
+
+        .everydeviceinner .content .contentblock {
+            padding: 0px 0px 0px 4px;
+        }
+
+        .StyledEngagingImmersive .inner .title h2 {
+            font-size: 86px;
+            line-height: 90px;
+            margin: 0px;
+        }
+    }
+
+    @media (max-width:960px) {
+
+        /* .introduction */
+        .introduction .intrmain {
+            width: 100%;
+            padding: 0px 30px;
+        }
+
+        .content {
+            width: 60%;
+        }
+
+        .media-sc {
+            width: 40%;
+            padding: 0px 0px 0px 30px;
+        }
+
+        .intrmain .media-sc .png {
+            width: 100%;
+            left: 0px;
+        }
+
+        /* .everydevice */
+        .everydevice {
+            background-attachment: scroll;
+        }
+
+        /* .everydeviceinner */
+        .everydeviceinner {
+            width: 100%;
+            padding: 0px 30px;
+        }
+
+        /* .terrafromdescription .inner */
+        .terrafromdescription .inner {
+            width: 100%;
+            padding: 0px 30px;
+        }
+
+        /* .stylecloud */
+        .stylecloud {
+            background-attachment: scroll;
+        }
+
+        .stylecloud .inner {
+            width: 100%;
+            padding: 0px 30px;
+        }
+
+        /* .StyledEngagingImmersive .inner */
+        .StyledEngagingImmersive .inner {
+            width: 100%;
+            padding: 0px 30px 40px;
+        }
+
+        /* .StyledSpace */
+        .StyledSpace {
+            background-attachment: scroll;
+        }
+
+        .StyledSpace .inner {
+            width: 100%;
+            padding: 0px 30px;
+        }
+
+        .StyledMedia {
+            margin: 0px;
+        }
+
+        /* StyledNews */
+        .StyledNews .inner {
+            width: 100%;
+            padding: 0px 30px;
+        }
+
+        .StyledNews .inner .newslist .newsitem {
+            flex-wrap: wrap;
+            padding: 0px;
+        }
+
+        .StyledNews .inner .newslist .newsitem .title {
+            width: 100%;
+            margin: 0px;
+            margin-top: 35px;
+        }
+
+        .StyledNews .inner .newslist .newsitem .content {
+            width: 100%;
+            padding: 0px 0px 35px;
+            right: 0px;
+        }
+
+        .StyledNews .inner .newslist .newsitem .title h2 {
+            font-size: 24px;
+            line-height: 34px;
+        }
+
+        .StyledNews .inner .newslist .newsitem .content .action {
+            margin: 30px 0px 0px;
+        }
+
+        .terrafromsphere .inner .rect {
+            top: -199px;
+        }
+
+        .terrafromsphere .inner .sphere {
+            padding: 61px 100px 50px;
+        }
+
+        .terrafromdescription .inner .content {
+            padding: 0px 30px;
+        }
+    }
+
+    @media (max-width:767px) {
+
+        /* navbar */
+        .header.active {
+            width: 100%;
+            height: 48px;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            z-index: 10;
+            background-color: rgb(0, 0, 0);
+        }
+
+        .contanier {
+            width: 100%;
+            padding: 0px 30px;
+        }
+
+        .logo {
+            width: 60px;
+        }
+
+        .navigation {
+            display: none;
+            padding: 0px 0px 0px 120px;
+        }
+
+        .menutoggle {
+            position: absolute;
+            top: 0px;
+            right: 10px;
+            height: 48px;
+            width: 48px;
+            z-index: 100;
+        }
+
+        .menutoggle span {
+            position: absolute;
+            width: 24px;
+            height: 2px;
+            background-color: rgb(255, 255, 255);
+            transition: all 200ms linear 0ms;
+        }
+
+        .menutoggle span.topbar {
+            top: 17px;
+            left: 12px;
+            transform: rotate(0deg);
+        }
+
+        .menutoggle span.midbar {
+            top: 24px;
+            left: 12px;
+            opacity: 1;
+        }
+
+        .menutoggle span.btmbar {
+            top: 31px;
+            left: 12px;
+            transform: rotate(0deg);
+        }
+
+        .mobilemenu.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .menulistitem.active {
+            transform: translateY(20px);
+        }
+
+        .menulistitem2.active {
+            transform: translateY(20px);
+        }
+
+        .menulistitem3.active {
+            transform: translateY(20px);
+        }
+
+        .menulistitem4.active {
+            transform: translateY(20px);
+        }
+
+        /* introduction */
+
+        .introduction {
+            margin: 145px 0px -108px;
+        }
+
+        .content .title h2 {
+            font-size: 48px;
+            line-height: 60px;
+        }
+
+        .description {
+            margin: 60px 0px 30px;
+        }
+
+        .descriptionmain {
+            max-width: 350px;
+        }
+
+        /* .platforms .inner */
+        .innermain .web {
+            width: 100%;
+        }
+
+        .innermain .windows {
+            width: 100%;
+        }
+
+        .innermain .iOS {
+            width: 100%;
+        }
+
+        .innermain .android {
+            width: 100%;
+        }
+
+        /* .terrafromsphere .inner .rect */
+        .terrafromsphere .inner {
+            width: 100%;
+            padding: 0px 30px;
+        }
+
+        .terrafromsphere .inner .rect {
+            top: -299px;
+            right: 100px;
+        }
+
+        .terrafromsphere .inner .sphere {
+            padding: 61px 53px 50px;
+        }
+
+        .terrafromdescription .inner {
+            padding: 0px 30px
+        }
+
+        .terrafromdescription .inner .content {
+            width: 384px;
+        }
+
+        /* .StyledMedia */
+
+        .StyledMedia .inner .Grid .how {
+            width: 100%;
+            height: auto;
+            min-height: 260px;
+        }
+
+        .StyledMedia .inner .Grid .evo {
+            width: 100%;
+            height: auto;
+            min-height: 260px;
+        }
+
+        .StyledMedia .inner .Grid .scale {
+            width: 100%;
+            height: auto;
+            min-height: 260px;
+        }
+
+        .StyledMedia .inner .Grid .power {
+            width: 100%;
+            height: auto;
+            min-height: 260px;
+        }
+
+        .StyledEngagingImmersive .inner .content .ContentBlock {
+            padding: 0px 0px 0px 4px;
+        }
+
+        .everydevice {
+            min-height: 768px;
+        }
+    }
+
+    @media (max-width:670px) {
+        .contanier .logo {
+            width: 30px;
+        }
+
+        /* introduction */
+
+        .introduction {
+            margin: -1px 0px 30px;
+        }
+
+        .content {
+            width: 100%;
+        }
+
+        .content .title {
+            margin: 61px 0px 30px;
+        }
+
+        .content .title h2 {
+            line-height: 58px;
+        }
+
+        .description {
+            margin: 60px 0px 30px;
+        }
+
+        .media-sc {
+            display: none;
+        }
+
+        .StyledEngagingImmersive {
+            min-height: 468px;
+        }
+
+    }
+
+    @media (max-width:500px) {
+        .everydeviceinner .title .Heading {
+            font-size: 48px;
+            line-height: 60px;
+        }
+
+        .everydeviceinner .title {
+            padding: 37px 0px 40px;
+        }
+
+        .terrafromsphere .inner .rect {
+            display: none;
+        }
+
+        .terrafromsphere .inner .sphere {
+            padding: 68px 30px 50px;
+        }
+
+
+
+        .terrafromsphere .inner .line {
+            display: none;
+        }
+
+        .terrafrompowerful .title .inner h2 {
+            font-size: 48px;
+            line-height: 60px;
+            margin: 0px 0px -16px 26px;
+        }
+
+        .stylecloud .inner .DeHeader {
+            font-size: 128px;
+        }
+
+        .stylecloud .inner .SignHeader {
+            font-size: 128px;
+        }
+
+        .StyledEngagingImmersive .inner .title h2 {
+            font-size: 48px;
+            line-height: 60px;
+        }
+
+        .StyledEngagingImmersive .inner .content {
+            margin: 33px -1px 0px;
+        }
+
+        .StyledSpace {
+            min-height: 568px;
+        }
+
+        .StyledSpace .inner .fluent {
+            width: 100%;
+            max-width: 50%;
+            left: 30%;
+            margin: 0px;
+        }
+
+        .StyledSpace .inner .fluent img {
+            max-width: 100%
+        }
+
+        .StyledSpace .inner .line {
+            display: none;
+        }
+
+        .StyledSpace .inner .WhiteRect {
+            display: none;
+        }
+
+        .StyledSpace .inner .WhitePlane {
+            display: none;
+        }
+
+        .StyledSpace .inner .LilacRect {
+            display: none;
+        }
+    }
+
+    @media (max-width:320px) {
+
+    }
