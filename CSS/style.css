@@ -112,6 +112,10 @@ header {
     transition: color 200ms linear 0ms;
 }
 
+.sitetitle h1 a:hover{
+    color: rgb(0, 120, 212);
+}
+
 .navigation {
     height: 48px;
     flex: 1 1 auto;
@@ -137,11 +141,40 @@ header {
     margin: 0px;
     padding: 0px;
 }
-
-.navigation ul li a {
+/* .web */
+.navigation ul .web{
     color: rgb(255, 255, 255);
-    text-decoration: none;
     transition: all 200ms linear 0ms;
+}
+.navigation ul .web:hover{
+    color: rgb(37, 142, 222);
+}
+
+/* .windows */
+.navigation ul .windows{
+    color: rgb(255, 255, 255);
+    transition: all 200ms linear 0ms;
+}
+.navigation ul .windows:hover{
+    color: rgb(79, 229, 255);
+}
+
+/* .iOS */
+.navigation ul .ios{
+    color: rgb(255, 255, 255);
+    transition: all 200ms linear 0ms;
+}
+.navigation ul .ios:hover{
+    color: rgb(207, 143, 255);
+}
+
+/* .android */
+.navigation ul .android{
+    color: rgb(255, 255, 255);
+    transition: all 200ms linear 0ms;
+}
+.navigation ul .android:hover{
+    color: rgb(105, 229, 110);
 }
 
 .mobilemenu {
@@ -348,6 +381,10 @@ main {
     text-decoration: none;
 }
 
+.innermain .web .webmain:hover{
+    background-color: rgb(12, 117, 197);
+}
+
 .innermain .web .webmain .icon {
     min-height: 96px;
     width: 100%;
@@ -426,6 +463,10 @@ main {
     text-decoration: none;
 }
 
+.windows_main:hover{
+    background-color: rgb(54, 204, 230);
+}
+
 .windows_main .icon {
     min-height: 96px;
     width: 100%;
@@ -500,6 +541,10 @@ main {
     display: flex;
     flex-direction: column;
     text-decoration: none;
+}
+
+.iOSmain:hover{
+    background-color: rgb(182, 118, 230);
 }
 
 .iOSmain .icon {
@@ -578,6 +623,10 @@ main {
     display: flex;
     flex-direction: column;
     text-decoration: none;
+}
+
+.androidmain:hover{
+    background-color: rgb(80, 204, 85);
 }
 
 .androidmain .icon {
@@ -1434,6 +1483,22 @@ main {
     line-height: 1;
 }
 
+.StyledMedia .inner .Grid .scale a .source .title label {
+    color: black;
+}
+
+.StyledMedia .inner .Grid .power a .source .title label {
+    color: black;
+}
+
+.StyledMedia .inner .Grid .scale a .source .icon svg path {
+    fill: black;
+}
+
+.StyledMedia .inner .Grid .power a .source .icon svg path {
+    fill: black;
+}
+
 @media (max-width:6770px) {
     .terrafromsphere .sphere {
         padding: 60px 30px;
@@ -1459,8 +1524,12 @@ main {
         display: flex;
         -webkit-box-pack: start;
         justify-content: flex-start;
-        width: 1536px;
+        width: 1336px;
         margin: 0px auto;
+    }
+
+    .sitetitle h1{
+        line-height: 27px;
     }
 
     .StyledNews {
@@ -1506,6 +1575,57 @@ main {
     .StyledNews .inner .newslist .newsitem .content {
         width: 50%;
         padding: 0px 16px 35px;
+    }
+
+    .intrmain{
+        width: 1336px;
+    }
+
+    .media-sc .leftLine{
+        top: -40px;
+        right: 36px;
+    }
+
+    .media-sc .rightLine{
+        bottom: 157px;
+        left: 30px;
+    }
+    
+    .media-sc .png{
+        left: 286px;
+    }
+    
+    .platforms .inner{
+        width: 1336px;
+    }
+
+    .everydeviceinner{
+        width: 1336px;
+    }
+
+    .terrafromsphere .inner{
+        width: 1336px;
+    }
+
+    .terrafromdescription .inner{
+        width: 1336px;
+    }
+
+    .terrafrompowerful .title .inner{
+        width: 1336px;
+    }
+
+    .terrafrompowerful .title .inner h2{
+        font-size: 96px;
+        line-height: 128px;
+    }
+
+    .stylecloud .inner{
+        width: 1336px;
+    }
+
+    .StyledEngagingImmersive .inner{
+        width: 1336px;
     }
 }
 
@@ -1755,22 +1875,6 @@ main {
 
     .StyledMedia .inner .Grid .power a .content p {
         margin: 0px;
-    }
-
-    .StyledMedia .inner .Grid .scale a .source .icon svg path {
-        fill: black;
-    }
-
-    .StyledMedia .inner .Grid .scale a .source .title label {
-        color: black;
-    }
-
-    .StyledMedia .inner .Grid .power a .source .icon svg path {
-        fill: black;
-    }
-
-    .StyledMedia .inner .Grid .power a .source .title label {
-        color: black;
     }
 
     /* StyledMedia */
@@ -2616,7 +2720,4 @@ main {
             display: none;
         }
     }
-
-    @media (max-width:320px) {
-
-    }
+}
